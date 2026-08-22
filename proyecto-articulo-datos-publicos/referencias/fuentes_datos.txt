@@ -1,0 +1,77 @@
+FUENTES DE DATOS - Proyecto: Segmentacion de entidades federativas de Mexico
+segun patrones de accidentes de transito: el caso de Morelos
+
+============================================================
+FUENTE PRINCIPAL
+============================================================
+
+Institucion que publica los datos:
+Secretaria de Infraestructura, Comunicaciones y Transportes (SICT)
+
+Portal de publicacion:
+Portal de Datos Abiertos de Mexico (datos.gob.mx)
+
+Dataset:
+"Accidentes de transito"
+URL del dataset: https://www.datos.gob.mx/dataset/accidentes_transito
+
+Licencia: Creative Commons Attribution 4.0 (CC-BY-4.0)
+https://creativecommons.org/licenses/by/4.0/
+
+Fecha de creacion de los metadatos del dataset (segun el portal): 2025-07-16
+Fecha de ultima modificacion de los metadatos (segun el portal): 2025-08-04
+Fecha de consulta y descarga para este proyecto: 2026-08-22
+
+------------------------------------------------------------
+Recurso 1: Accidentes de transito por dia de la semana
+------------------------------------------------------------
+Nombre de archivo local: data/raw/sct_70_accidentes_dia.csv
+Descripcion (segun el portal): Cantidad de accidentes de transito mortales
+y no mortales que ocurren cada dia de la semana, desagregado por entidad
+federativa. Incluye ademas conteos por condicion de luz (luz de dia,
+crepusculo, noche, alumbrado publico).
+URL de descarga directa:
+https://www.datos.gob.mx/dataset/8b6ac1ef-adc9-4470-a068-af6f3e699772/resource/ad7153d3-1cec-4826-9a56-77650a95b092/download/sct_70_accidentes_dia.csv
+
+------------------------------------------------------------
+Recurso 2: Accidentes de transito por mes
+------------------------------------------------------------
+Nombre de archivo local: data/raw/sct_71_accidentes_mes.csv
+Descripcion (segun el portal): Numero de accidentes de transito que ocurren
+al mes, desagregado por entidad federativa. Incluye la cantidad de personas
+heridas y fallecidas a causa del accidente, y danios materiales estimados
+(millones de pesos).
+URL de descarga directa:
+https://www.datos.gob.mx/dataset/8b6ac1ef-adc9-4470-a068-af6f3e699772/resource/8a46ba6d-9d40-4029-8d7e-216feeff950e/download/sct_71_accidentes_mes.csv
+
+============================================================
+NOTA SOBRE COBERTURA TEMPORAL
+============================================================
+Los metadatos publicos accesibles del recurso (via la API publica de CKAN
+de datos.gob.mx, endpoint /api/3/action/package_show) no especifican de
+forma explicita el anio exacto al que corresponden los registros de
+accidentes; solo se documentan las fechas de creacion/actualizacion del
+recurso en el portal (julio-agosto de 2025). Esta limitacion se documenta
+tambien en articulo_tecnico.md, seccion "Limitaciones".
+
+============================================================
+COBERTURA GEOGRAFICA Y GRANULARIDAD
+============================================================
+Ambos recursos presentan datos agregados a nivel de entidad federativa
+(32 entidades). No se encontro, al momento de la busqueda, un recurso
+publico y descargable en CSV con desagregacion a nivel municipal para
+Morelos dentro de este mismo dataset. Por eso el analisis se realiza
+a nivel nacional (32 entidades) y usa a Morelos como caso de estudio
+dentro de esa comparacion, en lugar de comparar municipios de Morelos
+entre si.
+
+============================================================
+OTRAS FUENTES CONSULTADAS (EXPLORATORIAS, NO USADAS EN EL MODELO FINAL)
+============================================================
+- INEGI - Estadistica de Accidentes de Transito Terrestre en Zonas Urbanas
+  y Suburbanas (ATUS): https://www.inegi.org.mx/programas/accidentes/
+  Se reviso como fuente alterna con posible desagregacion municipal, pero
+  el acceso a microdatos descargables en CSV requiere navegacion adicional
+  en el Repositorio Nacional de Metadatos (RNM) de INEGI y no se logro
+  obtener un archivo CSV de descarga directa dentro del tiempo del proyecto.
+  Se documenta aqui por transparencia, tal como pide la actividad.
