@@ -40,7 +40,11 @@ En volumen total de accidentes, la distribución entre entidades es marcadamente
 
 Morelos: en volumen total ocupa el lugar 24 de 32 (201 accidentes, 118 heridos, 23 fallecidos); en letalidad registra **~11.4**, de los tres valores más bajos del país (lugar 30 de 32); en fin de semana, **47.8%**, la segunda más alta tras la Ciudad de México (49.3%); y en horario nocturno/crepuscular, **54.7%**, la más alta de las 32 entidades, seguida de cerca por Tlaxcala (53.4%). Es notable que estas dos entidades —Morelos y Tlaxcala— comparten tanto una letalidad baja como una alta concentración nocturna, lo que sugiere que este patrón temporal no es exclusivo de Morelos, sino potencialmente compartido por entidades del centro del país con características similares de movilidad.
 
-Esta combinación —letalidad baja pero concentración temporal muy por encima del promedio nacional— motiva un modelo que combine varias variables a la vez, en lugar de analizar cada una por separado. Se ilustra en la **Gráfica 1** (accidentes totales por entidad, Morelos resaltado) y en la **Gráfica 2** (fin de semana vs. nocturna, por cluster), donde Morelos aparece desplazado hacia la esquina superior derecha.
+Esta combinación —letalidad baja pero concentración temporal muy por encima del promedio nacional— motiva un modelo que combine varias variables a la vez, en lugar de analizar cada una por separado. Se ilustra en la Gráfica 1, con Morelos resaltado en rojo dentro del volumen total de accidentes por entidad; el patrón temporal por cluster se retoma más adelante en la Gráfica 2, una vez presentado el modelo.
+
+![Gráfica 1. Accidentes totales por entidad federativa, Morelos resaltado en rojo.](imagenes/grafica_1.png)
+
+**Gráfica 1.** Accidentes totales por entidad federativa, Morelos resaltado en rojo. Se observa que el volumen no distingue a Morelos de forma particular: aparece en una posición intermedia-baja, consistente con su tamaño poblacional.
 
 ## Metodología
 
@@ -62,7 +66,11 @@ El modelo con k=3 agrupó a las 32 entidades en clusters de 15, 11 y 6. Morelos 
 
 Los tres clusters tienen perfiles distinguibles: el **cluster 1** (11 entidades, entre ellas Chiapas, Querétaro, Tabasco y Veracruz) agrupa a los estados con la letalidad promedio más baja de los tres grupos; el **cluster 2** (el más pequeño, 6 entidades, incluida la Ciudad de México, Coahuila, Durango, Sonora, Tamaulipas y Zacatecas) tiene la tasa de heridos más alta y, en contraste, la proporción nocturna más baja de los tres, lo que sugiere un patrón de accidentalidad más diurna y con más lesionados por evento; y el **cluster 0**, donde cae Morelos, es el que combina letalidad relativamente alta con la mayor concentración de fin de semana y horario nocturno de los tres grupos.
 
-Un dato clave: **Morelos es un valor atípico dentro de su propio cluster** en letalidad. El promedio del cluster 0 es 27.8; Morelos registra 11.4, muy por debajo del promedio del grupo y del nacional. En las variables de patrón temporal, en cambio, se ubica en el extremo superior de las 32 entidades.
+Un dato clave: **Morelos es un valor atípico dentro de su propio cluster** en letalidad. El promedio del cluster 0 es 27.8; Morelos registra 11.4, muy por debajo del promedio del grupo y del nacional. En las variables de patrón temporal, en cambio, se ubica en el extremo superior de las 32 entidades, como muestra la Gráfica 2.
+
+![Gráfica 2. Proporción de accidentes en fin de semana vs. horario nocturno/crepuscular, coloreada por cluster; Morelos marcado con una estrella.](imagenes/grafica_2.png)
+
+**Gráfica 2.** Proporción de accidentes en fin de semana (eje horizontal) contra proporción en horario nocturno/crepuscular (eje vertical), coloreada por cluster de KMeans. Morelos (estrella negra) aparece desplazado hacia la esquina superior derecha, separado del centro de su propio cluster (azul), lo que confirma visualmente que su patrón temporal es más extremo que el del resto de las entidades agrupadas con él.
 
 ## Interpretación
 

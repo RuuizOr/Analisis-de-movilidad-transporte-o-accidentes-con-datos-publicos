@@ -44,6 +44,18 @@ A partir de ambos se construyó un dataset limpio de 32 filas (una por entidad) 
 - El modelo KMeans (k=3) agrupa a Morelos con entidades de letalidad promedio más alta, pero el análisis detallado muestra que esa pertenencia al grupo se explica por el patrón temporal compartido, no por la letalidad.
 - Detalle completo de la interpretación en [`articulo_tecnico.md`](articulo_tecnico.md).
 
+## Gráficas principales
+
+**Gráfica 1.** Accidentes totales por entidad federativa (Morelos resaltado en rojo).
+
+![Gráfica 1: accidentes totales por entidad federativa, Morelos resaltado en rojo](imagenes/grafica_1.png)
+
+**Gráfica 2.** Proporción de accidentes en fin de semana vs. horario nocturno/crepuscular, coloreada por cluster.
+
+![Gráfica 2: patrón temporal de accidentes por entidad, según cluster de KMeans](imagenes/grafica_2.png)
+
+Ambas gráficas se generan con Python/matplotlib desde el notebook (ver `notebook/analisis_datos_publicos.ipynb`) y se guardan automáticamente en esta carpeta al ejecutarlo.
+
 ## Limitaciones
 - Datos agregados a nivel de entidad federativa, no municipal.
 - El periodo exacto de referencia de los datos no está explícito en los metadatos públicos del recurso.
@@ -84,6 +96,7 @@ proyecto-articulo-datos-publicos/
     └── fuentes_datos.txt
 ```
 
-## Enlace al artículo técnico
-Versión completa del análisis: [`articulo_tecnico.md`](articulo_tecnico.md)
-_(agregar aquí el enlace de publicación en Medium/Hashnode y el enlace del repositorio en GitHub una vez publicados)_
+## Evidencia del proyecto
+- **Artículo técnico completo:** [`articulo_tecnico.md`](articulo_tecnico.md) ([`articulo_tecnico.pdf`](articulo_tecnico.pdf))
+- **Repositorio en GitHub:** https://github.com/RuuizOr/Analisis-de-movilidad-transporte-o-accidentes-con-datos-publicos
+- **Artículo publicado (Medium/Hashnode):** _pendiente de agregar el enlace una vez publicado_
