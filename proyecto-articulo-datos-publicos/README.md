@@ -4,7 +4,7 @@
 - Ruiz Santos Orlando
 - Ventura Gil Astrid Valeria
 - Ocampo Martínez Angel Daniel
-- Medina Villa Abril Aide
+- Medina Villa Abril Aidee
 
 ## Grupo
 9° A
