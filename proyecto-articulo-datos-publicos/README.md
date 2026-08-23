@@ -99,4 +99,3 @@ proyecto-articulo-datos-publicos/
 ## Evidencia del proyecto
 - **Artículo técnico completo:** [`articulo_tecnico.md`](articulo_tecnico.md) ([`articulo_tecnico.pdf`](articulo_tecnico.pdf))
 - **Repositorio en GitHub:** https://github.com/RuuizOr/Analisis-de-movilidad-transporte-o-accidentes-con-datos-publicos
-- **Artículo publicado (Medium/Hashnode):** _pendiente de agregar el enlace una vez publicado_
