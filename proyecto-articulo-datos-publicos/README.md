@@ -86,4 +86,3 @@ proyecto-articulo-datos-publicos/
 
 ## Enlace al artículo técnico
 Versión completa del análisis: [`articulo_tecnico.md`](articulo_tecnico.md)
-_(agregar aquí el enlace de publicación en Medium/Hashnode y el enlace del repositorio en GitHub una vez publicados)_
